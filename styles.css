@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Work+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+    font-family:Space Grotesk;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color:black;
+    color: beige;
+}
+
+h1, h2 {
+    font-family: Space Mono;
+    font-size: 2.3em; 
+    color: #93C572;
+    line-height: 1.2;
+    margin: 0 0 40px 0;
+}
+
+p {
+    margin: 40px 0 40px 0;
+}
+
+
+/*Animations*/ 
+
+.colorful {
+    font-family: Space Mono;
+    font-weight: bolder;
+    color: #93C572;
+    animation: younlei 7s ease forwards infinite;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes younlei {
+    0% {
+        color: #93C572;
+    }   
+    25% {
+        color: #c2deb4;
+    }  
+    50% {
+        color:  #32CD32;
+    }
+    75% {
+        color:  #334e51;
+    }
+    to {
+        color: #7e8c54;
+    }
+}
+
+/* Links */
+a, a:visited {
+    color: hsl(240, 14%, 99%);
+    text-underline-position: under;
+    text-decoration: wavy underline hsl(143, 98%, 19%);
+}
+
+a:hover {
+    color: hsl(105, 96%, 73%);
+}
+
+/* Lists */
+ul {
+    margin-top: -3%;
+    list-style: none;
+}
+
+ul li:nth-child(n+2) {
+    margin-top: 2%;
+}
+
+ul li:before {
+    content: '◡̈';
+    margin-left: -1.6em;
+    padding-right: 0.5em;
+}
+
+/* Sections */
+section {
+    display: flex;
+}
+
+/*the selector targets every odd-numbered section 
+and declares sets the flex-direction property to 
+row-reverse for the selected elements*/
+
+section:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+section div {
+    width: 50%;
+}
+
+section div.text {
+    padding: 60px;
+}
+
+/* Images */ 
+div.full-image {
+    height: 100vh;
+    background-size: cover;
+   /* position: -webkit-sticky;*/
+   /*its position relative to its initial position in the Html
+   flow, until it crosses a threshold in the viewport*/
+    position: sticky;
+    top: 0;
+}
+
+div.image-1 {
+    background-image: url("re\ \(3\).png");
+    background-position: center center;
+}
+
+div.image-2 {
+    background-image: url("placeholder2.jpg");
+    background-position: center left;
+}
+
+div.image-3 {
+    background-image: url("placeholder.jpg");
+    background-position: center center;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+    body {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    section {
+        display: block;
+    }
+
+    section div {
+        width: 85%;
+    }
+
+    section div.text {
+        padding: 30px;
+    }
+
+    div.full-image {
+        width: 100%;
+    }
+    
+ 
+    
+    div.image-3 {
+        background-position: center top;
+    }
+}
