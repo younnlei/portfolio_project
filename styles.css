@@ -74,6 +74,7 @@ a:hover {
     color: hsl(105, 96%, 73%);
 }
 
+
 /* Lists */
 ul {
     margin-top: -3%;
@@ -128,7 +129,7 @@ div.image-1 {
 }
 
 div.image-2 {
-    background-image: url("placeholder2.jpg");
+    background-image: url("dockiq-transparent\ \(1\).png");
     background-position: center left;
 }
 
