@@ -130,7 +130,10 @@ div.image-1 {
 
 div.image-2 {
     background-image: url("DockIQ.gif");
-    background-position: center left;
+    background-position: center;
+    background-size: 90%;  /* Uses 90% of the container width */
+    background-repeat: no-repeat;
+    padding: 20px;  /* Adds some spacing */
 }
 
 div.image-3 {
